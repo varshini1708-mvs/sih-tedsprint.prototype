@@ -26,12 +26,16 @@ origins = [
     "http://127.0.0.1:3000",
 ]
 
-if settings.frontend_url and settings.frontend_url not in origins:
-    origins.append(settings.frontend_url)
+if settings.frontend_url:
+    for url in settings.frontend_url.split(","):
+        url_clean = url.strip()
+        if url_clean and url_clean not in origins:
+            origins.append(url_clean)
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    allow_origin_regex=r"https://.*\.netlify\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
