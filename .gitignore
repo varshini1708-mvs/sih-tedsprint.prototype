@@ -1,0 +1,42 @@
+# Secrets and Environment Variables
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Dependencies
+node_modules/
+backend/venv/
+backend/env/
+backend/.venv/
+env/
+venv/
+ENV/
+
+# Build and Output directories
+dist/
+build/
+
+# Python cache & test artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/.pytest_cache/
+
+# Temporary audio test files
+*.wav
+*.webm
+*.mp3
+*.ogg
+
+# IDE and System files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

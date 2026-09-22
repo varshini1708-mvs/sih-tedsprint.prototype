@@ -1,0 +1,317 @@
+/* =========================================================
+   CUSTOMER PORTAL STYLES
+========================================================= */
+
+main.customer-main {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+  background: #f7f1e7;
+}
+
+/* HERO */
+.customer-hero {
+  min-height: 70vh;
+  padding: 120px 10% 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.customer-hero h1 {
+  max-width: 750px;
+  font-family: var(--font-heading);
+  font-size: clamp(38px, 5vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--maroon);
+  margin: 15px 0;
+}
+
+.customer-hero h1 span {
+  display: block;
+  color: var(--gold-dark);
+}
+
+.customer-hero-text {
+  max-width: 620px;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* SEARCH */
+.customer-search {
+  display: flex;
+  width: 100%;
+  max-width: 650px;
+  margin-top: 30px;
+  border: 1px solid var(--gold);
+  background: var(--paper-card);
+}
+
+.customer-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 17px 20px;
+  font-size: 14px;
+}
+
+.customer-search button {
+  border: none;
+  padding: 0 25px;
+  background: var(--maroon);
+  color: var(--gold-light);
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* SECTIONS */
+.customer-section {
+  padding: 80px 10%;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.section-heading p {
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-family: var(--font-heading);
+  color: var(--maroon);
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* CATEGORY GRID */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: var(--paper-card);
+  border: 1px solid var(--border-light);
+  padding: 30px;
+  transition: all 0.25s ease;
+
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+.category-icon {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  color: var(--maroon);
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.category-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* PRODUCTS GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.customer-product {
+  background: var(--paper-card);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.customer-product:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.product-image-placeholder {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eadcc6;
+  font-size: 65px;
+  overflow: hidden;
+}
+
+.product-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer-product-info {
+  padding: 25px;
+}
+
+.product-category {
+  color: var(--gold-dark);
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.customer-product h3 {
+  color: var(--maroon);
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.customer-product-info > p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.product-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product-bottom strong {
+  color: var(--maroon);
+  font-size: 18px;
+}
+
+.product-bottom button {
+  background: var(--maroon);
+  color: var(--gold-light);
+  border: none;
+  padding: 10px 14px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* FEATURED ARTISAN */
+.artisan-section {
+  background: #efe5d6;
+}
+
+.artisan-feature {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background: var(--paper-card);
+  border: 1px solid var(--border-light);
+}
+
+.artisan-avatar-lg {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--maroon);
+  color: var(--gold-light);
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.artisan-feature h2 {
+  color: var(--maroon);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.artisan-feature p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+/* ACCOUNT PROFILE CARD */
+.customer-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background: var(--paper-card);
+  border: 1px solid var(--border-light);
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--maroon);
+  color: var(--gold-light);
+  font-size: 25px;
+  font-family: var(--font-heading);
+}
+
+.customer-profile-card h3 {
+  margin-bottom: 4px;
+  color: var(--maroon);
+}
+
+.customer-profile-card p {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.customer-profile-card .outline-btn {
+  margin-left: auto;
+}
+
+/* Responsive Customer Portal */
+@media (max-width: 900px) {
+  main.customer-main {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .customer-hero,
+  .customer-section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .customer-search {
+    flex-direction: column;
+  }
+  .artisan-feature,
+  .customer-profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .customer-profile-card .outline-btn {
+    margin-left: 0;
+  }
+}
